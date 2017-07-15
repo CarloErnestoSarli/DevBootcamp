@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Alice's Osteopathy Clinic </title>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Alice.css" />
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav-bar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">Alice's Clinic</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="top-nav-bar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#about">
+                            <i class="fa fa-paw" aria-hidden="true"></i> About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Services I offer
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#contact-me">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Contact me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div id="home_text" class="text-center">
+            <h1> My Awesome Clinic </h1>
+            <p class="lead">I will massage the pain away</p>
+            <a class="btn btn-default" href="#contact-me">Contact me</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-me text-center">
+            <h1> Hi! </h1>
+            <h2>My name is Alice and I am an osteopathy Student</h2>
+            <p class="lead"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
+                eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <div class="page-header">
+            <h1 class="text-center">What I offer</h1>
+        </div>
+        <div id="image-grid" class="row text-center">
+            <div class="member">
+                <img src="images/example_1.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/example_3.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/example_1.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/example_3.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/example_1.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+            <div class="member">
+                <img src="images/example_3.jpg" class="img-thumbnail">
+                <div class="name">
+                    <h3>Name</h3>
+                    <br /> Description
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-me" class="container">
+        <div class="page-header">
+            <h1 class="text-center">Contact me</h1>
+        </div>
+        <form class="col-md-5 col-md-offset-4">
+            <div class="form-group">
+                <input class="form-control" placeholder="Insert your name" type="text " id="name-field" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Insert your email" type="email" id="email-field" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Subject of the email" type="text" id="subject-field" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="15" id="message-field" required></textarea>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit">
+            </div>
+        </form>
+    </section>
+</body>
